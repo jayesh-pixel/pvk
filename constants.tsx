@@ -124,21 +124,21 @@ export const SOCIAL_LINKS = [
     {
         name: 'Facebook',
         href: '#',
-    icon: <FaFacebookF className="w-6 h-6" />,
+    icon: <FaFacebookF size={24} />,
     },
     {
         name: 'Twitter',
         href: '#',
-    icon: <FaTwitter className="w-6 h-6" />,
+    icon: <FaTwitter size={24} />,
     },
     {
         name: 'LinkedIn',
         href: '#',
-    icon: <FaLinkedinIn className="w-6 h-6" />,
+    icon: <FaLinkedinIn size={24} />,
     },
   {
     name: 'YouTube',
     href: '#',
-    icon: <FaYoutube className="w-6 h-6" />,
+    icon: <FaYoutube size={24} />,
   },
 ];

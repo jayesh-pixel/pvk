@@ -16,7 +16,7 @@ const App: React.FC = () => {
   return (
     <div className="bg-pvk-light-bg min-h-screen text-pvk-dark-text font-sans">
       <Header />
-      <main className="container mx-auto px-4 py-6 md:py-10">
+      <main className="container mx-auto px-6 md:px-12 lg:px-16 py-6 md:py-8">
         <Hero articles={heroArticles} />
         <div className="space-y-12 md:space-y-16 mt-12 md:mt-16">
           {categorizedArticles.map(({ category, articles }) => (
