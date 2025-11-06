@@ -12,8 +12,10 @@ const CategorySection: React.FC<CategorySectionProps> = ({ title, articles }) =>
     return null;
   }
 
+  const sectionId = title.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
+
   return (
-    <section>
+    <section id={sectionId}>
       <div className="flex items-center mb-6">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-white uppercase">{title}</h2>
         <div className="flex-grow h-px bg-gradient-to-r from-pvk-gold/50 to-transparent ml-4"></div>

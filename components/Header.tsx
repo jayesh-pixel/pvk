@@ -5,6 +5,22 @@ import { FaYoutube } from 'react-icons/fa';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const scrollToSection = (category: string) => {
+    const sectionId = category.toLowerCase().replace(/\s+/g, '-').replace(/&/g, 'and');
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <header className="bg-pvk-card-bg/95 backdrop-blur-sm sticky top-0 z-50 shadow-lg border-b border-pvk-border">
       <div className="container mx-auto px-4">
@@ -22,13 +38,13 @@ const Header: React.FC = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-6">
             {NAV_CATEGORIES.map((category) => (
-              <a
+              <button
                 key={category}
-                href="#"
-                className="text-white hover:text-pvk-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider"
+                onClick={() => scrollToSection(category)}
+                className="text-white hover:text-pvk-gold transition-colors duration-300 text-sm font-medium uppercase tracking-wider cursor-pointer"
               >
                 {category}
-              </a>
+              </button>
             ))}
           </nav>
           
@@ -72,13 +88,13 @@ const Header: React.FC = () => {
         <div className="md:hidden bg-pvk-card-bg py-4 border-t border-pvk-border">
           <nav className="flex flex-col items-center space-y-4">
             {NAV_CATEGORIES.map((category) => (
-              <a
+              <button
                 key={category}
-                href="#"
-                className="text-white hover:text-pvk-gold transition-colors duration-300 text-base uppercase"
+                onClick={() => scrollToSection(category)}
+                className="text-white hover:text-pvk-gold transition-colors duration-300 text-base uppercase cursor-pointer"
               >
                 {category}
-              </a>
+              </button>
             ))}
           </nav>
         </div>
