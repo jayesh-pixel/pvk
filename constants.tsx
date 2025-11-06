@@ -3,14 +3,14 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
 import type { Article, Category } from './types';
 
-export const NAV_CATEGORIES: Category[] = ['Business', 'Commodity', 'Real Estate', 'Auto & Tech', 'Entertainment', 'Agriculture'];
+export const NAV_CATEGORIES: Category[] = ['Commodity', 'Personal Finance', 'Agriculture', 'Stock Market', 'Business', 'Real Estate', 'Auto & Tech', 'Entertainment'];
 
 export const DUMMY_ARTICLES: Article[] = [
   {
     id: 1,
     title: 'Global Markets Rally as Tech Stocks Surge',
     summary: 'Investors showed renewed confidence in the tech sector, pushing major indices to new heights this week.',
-    imageUrl: 'https://picsum.photos/seed/business1/600/400',
+    imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Fpremium-photo%2Fenergy-sector-decline-tech-surge-shown-stock-market-bar-graph_1252980-977.jpg%3Fw%3D1380&f=1&nofb=1&ipt=46af3441e1687cdebb38bb2838c299e1d5ff28a5bdfb9c1b2cd9ec427854fd16',
     category: 'Business',
     timestamp: '2 hours ago',
   },
@@ -117,6 +117,38 @@ export const DUMMY_ARTICLES: Article[] = [
     imageUrl: 'https://picsum.photos/seed/tech3/600/400',
     category: 'Auto & Tech',
     timestamp: '2 days ago',
+  },
+  {
+    id: 15,
+    title: 'Smart Budgeting Apps Help Millennials Save More',
+    summary: 'New financial technology is making it easier than ever to track spending and build wealth.',
+    imageUrl: 'https://picsum.photos/seed/finance1/600/400',
+    category: 'Personal Finance',
+    timestamp: '4 hours ago',
+  },
+  {
+    id: 16,
+    title: 'Stock Market Hits Record High Amid Economic Recovery',
+    summary: 'Major indices break through previous records as investor confidence reaches new peaks.',
+    imageUrl: 'https://picsum.photos/seed/stocks1/600/400',
+    category: 'Stock Market',
+    timestamp: '1 hour ago',
+  },
+  {
+    id: 17,
+    title: 'Retirement Planning: What You Need to Know in 2025',
+    summary: 'Financial experts share key strategies for securing your financial future.',
+    imageUrl: 'https://picsum.photos/seed/finance2/600/400',
+    category: 'Personal Finance',
+    timestamp: '6 hours ago',
+  },
+  {
+    id: 18,
+    title: 'Tech Stocks Lead Market Rally in Q4',
+    summary: 'Technology sector outperforms expectations, driving overall market gains.',
+    imageUrl: 'https://picsum.photos/seed/stocks2/600/400',
+    category: 'Stock Market',
+    timestamp: '3 hours ago',
   }
 ];
 

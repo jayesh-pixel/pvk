@@ -1,5 +1,5 @@
 
-export type Category = 'Business' | 'Commodity' | 'Real Estate' | 'Auto & Tech' | 'Entertainment' | 'Agriculture';
+export type Category = 'Commodity' | 'Personal Finance' | 'Agriculture' | 'Stock Market' | 'Business' | 'Real Estate' | 'Auto & Tech' | 'Entertainment';
 
 export interface Article {
   id: number;
