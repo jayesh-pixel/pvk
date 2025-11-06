@@ -65,8 +65,18 @@ const Header: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          {/* Mobile Menu Button + YouTube */}
+          <div className="md:hidden flex items-center gap-3">
+            {/* YouTube button (mobile) */}
+            <a
+              href="#"
+              aria-label="PVK YouTube"
+              className="h-10 w-10 rounded-full bg-pvk-red flex items-center justify-center hover:bg-pvk-red-dark transition-colors text-white shadow-sm"
+            >
+              <FaYoutube size={20} />
+            </a>
+
+            {/* Menu button */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white focus:outline-none"
