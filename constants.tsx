@@ -1,6 +1,7 @@
 
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import type { Article, Category } from './types';
 
 export const NAV_CATEGORIES: Category[] = ['Commodity', 'Personal Finance', 'Agriculture', 'Stock Market', 'Business', 'Real Estate', 'Auto & Tech', 'Entertainment'];
@@ -156,21 +157,26 @@ export const SOCIAL_LINKS = [
     {
         name: 'Facebook',
         href: '#',
-    icon: <FaFacebookF size={24} />,
+        icon: <FaFacebookF size={18} />,
     },
     {
-        name: 'Twitter',
+        name: 'X',
         href: '#',
-    icon: <FaTwitter size={24} />,
+        icon: <FaXTwitter size={18} />,
     },
     {
         name: 'LinkedIn',
         href: '#',
-    icon: <FaLinkedinIn size={24} />,
+        icon: <FaLinkedinIn size={18} />,
     },
-  {
-    name: 'YouTube',
-    href: '#',
-    icon: <FaYoutube size={24} />,
-  },
+    {
+        name: 'WhatsApp',
+        href: '#',
+        icon: <FaWhatsapp size={18} />,
+    },
+    {
+        name: 'YouTube',
+        href: '#',
+        icon: <FaYoutube size={18} />,
+    },
 ];

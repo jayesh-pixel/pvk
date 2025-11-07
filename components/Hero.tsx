@@ -58,7 +58,7 @@ const Hero: React.FC<HeroProps> = ({ articles }) => {
                 {article.category}
               </span>
               <h1 className="text-xl md:text-3xl font-serif font-bold mt-2 leading-tight hover:text-pvk-gold transition-colors">
-                <a href="#">{article.title}</a>
+                <a href={`#/article/${article.id}`}>{article.title}</a>
               </h1>
               <p className="mt-2 text-gray-300 text-sm hidden md:block">{article.summary}</p>
             </div>
@@ -108,7 +108,7 @@ const Hero: React.FC<HeroProps> = ({ articles }) => {
         <ul className="space-y-3">
           {popularArticles.map((article) => (
             <li key={article.id} className="border-b border-pvk-border pb-3 last:border-b-0">
-              <a href="#" className="group">
+              <a href={`#/article/${article.id}`} className="group">
                 <p className="font-semibold text-white text-sm group-hover:text-pvk-gold transition-colors duration-200">
                   {article.title}
                 </p>

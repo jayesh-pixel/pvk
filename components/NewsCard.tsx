@@ -8,7 +8,7 @@ interface NewsCardProps {
 const NewsCard: React.FC<NewsCardProps> = ({ article }) => {
   return (
     <div className="bg-pvk-card-bg rounded-lg overflow-hidden group shadow-lg hover:shadow-pvk-gold/10 transition-all duration-300 hover:-translate-y-1 border border-pvk-border hover:border-pvk-gold/50">
-      <a href="#">
+      <a href={`#/article/${article.id}`}>
         <div className="overflow-hidden">
             <img 
                 src={article.imageUrl} 
